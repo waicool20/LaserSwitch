@@ -1,0 +1,204 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:Screw_Terminal_01x06 J?
+U 1 1 604AC82E
+P 7000 2850
+AR Path="/604AC82E" Ref="J?"  Part="1" 
+AR Path="/604AB99F/604AC82E" Ref="J4"  Part="1" 
+AR Path="/604BEDA7/604AC82E" Ref="J5"  Part="1" 
+AR Path="/604C1E57/604AC82E" Ref="J6"  Part="1" 
+F 0 "J6" H 7080 2842 50  0000 L CNN
+F 1 "Motor" H 7080 2751 50  0000 L CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_6-G-3.5_1x06_P3.50mm_Horizontal" H 7000 2850 50  0001 C CNN
+F 3 "~" H 7000 2850 50  0001 C CNN
+	1    7000 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 604AC834
+P 6700 2550
+AR Path="/604AC834" Ref="#PWR?"  Part="1" 
+AR Path="/604AB99F/604AC834" Ref="#PWR025"  Part="1" 
+AR Path="/604BEDA7/604AC834" Ref="#PWR029"  Part="1" 
+AR Path="/604C1E57/604AC834" Ref="#PWR033"  Part="1" 
+F 0 "#PWR033" H 6700 2400 50  0001 C CNN
+F 1 "+5V" H 6715 2723 50  0000 C CNN
+F 2 "" H 6700 2550 50  0001 C CNN
+F 3 "" H 6700 2550 50  0001 C CNN
+	1    6700 2550
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 2550 6700 2650
+Wire Wire Line
+	6700 2650 6800 2650
+Wire Wire Line
+	6700 2650 6700 2850
+Wire Wire Line
+	6700 2850 6800 2850
+Connection ~ 6700 2650
+Wire Wire Line
+	6700 2850 6700 3050
+Wire Wire Line
+	6700 3050 6800 3050
+Connection ~ 6700 2850
+$Comp
+L Device:Q_NMOS_GSD Q1
+U 1 1 604ADB00
+P 4650 3450
+AR Path="/604AB99F/604ADB00" Ref="Q1"  Part="1" 
+AR Path="/604BEDA7/604ADB00" Ref="Q4"  Part="1" 
+AR Path="/604C1E57/604ADB00" Ref="Q7"  Part="1" 
+F 0 "Q7" H 4854 3496 50  0000 L CNN
+F 1 "Si2300" H 4854 3405 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4850 3550 50  0001 C CNN
+F 3 "~" H 4650 3450 50  0001 C CNN
+	1    4650 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 2750 6800 2750
+$Comp
+L Device:R R2
+U 1 1 604B01F0
+P 4750 3100
+AR Path="/604AB99F/604B01F0" Ref="R2"  Part="1" 
+AR Path="/604BEDA7/604B01F0" Ref="R5"  Part="1" 
+AR Path="/604C1E57/604B01F0" Ref="R8"  Part="1" 
+F 0 "R8" H 4820 3146 50  0000 L CNN
+F 1 "470" H 4820 3055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 4680 3100 50  0001 C CNN
+F 3 "~" H 4750 3100 50  0001 C CNN
+	1    4750 3100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 2750 4750 2950
+$Comp
+L power:GND #PWR022
+U 1 1 604B14E3
+P 4750 3650
+AR Path="/604AB99F/604B14E3" Ref="#PWR022"  Part="1" 
+AR Path="/604BEDA7/604B14E3" Ref="#PWR026"  Part="1" 
+AR Path="/604C1E57/604B14E3" Ref="#PWR030"  Part="1" 
+F 0 "#PWR030" H 4750 3400 50  0001 C CNN
+F 1 "GND" H 4755 3477 50  0000 C CNN
+F 2 "" H 4750 3650 50  0001 C CNN
+F 3 "" H 4750 3650 50  0001 C CNN
+	1    4750 3650
+	1    0    0    -1  
+$EndComp
+Text HLabel 4450 3450 0    50   Input ~ 0
+STEP
+$Comp
+L Device:Q_NMOS_GSD Q2
+U 1 1 604B3C5B
+P 5300 3900
+AR Path="/604AB99F/604B3C5B" Ref="Q2"  Part="1" 
+AR Path="/604BEDA7/604B3C5B" Ref="Q5"  Part="1" 
+AR Path="/604C1E57/604B3C5B" Ref="Q8"  Part="1" 
+F 0 "Q8" H 5504 3946 50  0000 L CNN
+F 1 "Si2300" H 5504 3855 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5500 4000 50  0001 C CNN
+F 3 "~" H 5300 3900 50  0001 C CNN
+	1    5300 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 604B3C61
+P 5400 3550
+AR Path="/604AB99F/604B3C61" Ref="R3"  Part="1" 
+AR Path="/604BEDA7/604B3C61" Ref="R6"  Part="1" 
+AR Path="/604C1E57/604B3C61" Ref="R9"  Part="1" 
+F 0 "R9" H 5470 3596 50  0000 L CNN
+F 1 "470" H 5470 3505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 5330 3550 50  0001 C CNN
+F 3 "~" H 5400 3550 50  0001 C CNN
+	1    5400 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR023
+U 1 1 604B3C67
+P 5400 4100
+AR Path="/604AB99F/604B3C67" Ref="#PWR023"  Part="1" 
+AR Path="/604BEDA7/604B3C67" Ref="#PWR027"  Part="1" 
+AR Path="/604C1E57/604B3C67" Ref="#PWR031"  Part="1" 
+F 0 "#PWR031" H 5400 3850 50  0001 C CNN
+F 1 "GND" H 5405 3927 50  0000 C CNN
+F 2 "" H 5400 4100 50  0001 C CNN
+F 3 "" H 5400 4100 50  0001 C CNN
+	1    5400 4100
+	1    0    0    -1  
+$EndComp
+Text HLabel 5100 3900 0    50   Input ~ 0
+DIR
+$Comp
+L Device:Q_NMOS_GSD Q3
+U 1 1 604B4962
+P 6000 4300
+AR Path="/604AB99F/604B4962" Ref="Q3"  Part="1" 
+AR Path="/604BEDA7/604B4962" Ref="Q6"  Part="1" 
+AR Path="/604C1E57/604B4962" Ref="Q9"  Part="1" 
+F 0 "Q9" H 6204 4346 50  0000 L CNN
+F 1 "Si2300" H 6204 4255 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6200 4400 50  0001 C CNN
+F 3 "~" H 6000 4300 50  0001 C CNN
+	1    6000 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 604B4968
+P 6100 3950
+AR Path="/604AB99F/604B4968" Ref="R4"  Part="1" 
+AR Path="/604BEDA7/604B4968" Ref="R7"  Part="1" 
+AR Path="/604C1E57/604B4968" Ref="R10"  Part="1" 
+F 0 "R10" H 6170 3996 50  0000 L CNN
+F 1 "470" H 6170 3905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" V 6030 3950 50  0001 C CNN
+F 3 "~" H 6100 3950 50  0001 C CNN
+	1    6100 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR024
+U 1 1 604B496E
+P 6100 4500
+AR Path="/604AB99F/604B496E" Ref="#PWR024"  Part="1" 
+AR Path="/604BEDA7/604B496E" Ref="#PWR028"  Part="1" 
+AR Path="/604C1E57/604B496E" Ref="#PWR032"  Part="1" 
+F 0 "#PWR032" H 6100 4250 50  0001 C CNN
+F 1 "GND" H 6105 4327 50  0000 C CNN
+F 2 "" H 6100 4500 50  0001 C CNN
+F 3 "" H 6100 4500 50  0001 C CNN
+	1    6100 4500
+	1    0    0    -1  
+$EndComp
+Text HLabel 5800 4300 0    50   Input ~ 0
+EN
+Wire Wire Line
+	5400 3400 5400 2950
+Wire Wire Line
+	5400 2950 6800 2950
+Wire Wire Line
+	6100 3800 6100 3150
+Wire Wire Line
+	6100 3150 6800 3150
+$EndSCHEMATC
